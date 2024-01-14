@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "runtime": "node/v18",
+  "region": "US",
+  "envs": [
+    "MY_NAME"
+  ],
+  "typescript": false,
+  "cronjobs": [
+    {
+      "name": "测试",
+      "startTime": 1697078760,
+      "endTime": 1697082360,
+      "functions": [
+        "hello.js"
+      ],
+      "repeatType": "minute",
+      "repeatInterval": 1
+    }
+  ]
+}
